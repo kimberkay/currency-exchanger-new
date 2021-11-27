@@ -23,7 +23,7 @@
 
 ## Description
 
-_This simple website will take the amount in USD that you input and convert it to the currencies listed_
+_This simple website will take the amount in USD that you input and convert it to the amount of the currency selected_
 
 
 ## Setup/Installation Requirements
@@ -31,11 +31,11 @@ _This simple website will take the amount in USD that you input and convert it t
 * _Clone this repository to your desktop_
 * _Open in the code editor of your choice_
 * _Commit and push your .gitignore file to your repo_
-* _Run $ npm install_
-* _Type $npm run build to build your environment_
-* _Go to https://exchangerate-api.com to create a free account and      acquire your own API key._
-* _Once you have your key, open up the .env file in the root directory   and type in your key and save_
-* _Run $ npm run start to view the browser and the program's functionality_
+* _Run   $ npm install   in the command line_
+* _Run   $ npm run build   to build your environment_
+* _Go to https://exchangerate-api.com to create a free account and acquire your own API key._
+* _Once you have your key, open up the .env file in the root directory put in your key and save_
+* _Run  $ npm run start  to view the browser and the program's functionality_
 
 
 ## Known Bugs

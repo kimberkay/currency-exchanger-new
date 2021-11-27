@@ -14,7 +14,7 @@ function clearFields() {
 
 function entryError(usDollars,currency) {
   if (NaN(usDollars) === true) {
-    $("#showErrors1").text(`"Error: please enter just a number, no $"`);
+    $("#showErrors1").text(`"Error: please enter numbers only`);
   } 
   if (currency === !currency) {
     $('#showErrors2').text("Error: currency selected is not available");
@@ -24,7 +24,7 @@ function entryError(usDollars,currency) {
 $(document).ready(function() {
   $('#form-convert').submit(function(event) {
     event.preventDefault();
-    let usDollars = $("#amount").val();
+    let usDollars = Math.round($("#amount").val() * 100)/100;
     let currency = $("#pickCurrency").val();
     clearFields();
     let promise = ExchangeRateAPI.getRate(currency);
