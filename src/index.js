@@ -31,7 +31,7 @@ $(document).ready(function() {
     promise.then(function(response) {
       const result = JSON.parse(response); 
       function conversion() {
-        return result.conversion_rate * usDollars;
+        return Math.round(result.conversion_rate * usDollars * 100)/100;
       }
       $('#showConversion').text(`$${usDollars} USD converts to $${conversion()} ${currency}`);
     }, function(error) {
