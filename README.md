@@ -34,7 +34,7 @@ _This simple website will take the amount in USD that you input and convert it t
 * _Run   $ npm install   in the command line_
 * _Run   $ npm run build   to build your environment_
 * _Go to https://exchangerate-api.com to create a free account and acquire your own API key._
-* _Once you have your key, open up the .env file in the root directory put in your key and save_
+* _Once you have your key, create a .env file in the root directory of the project. Enter your key like this: API_KEY=(enter number here, after =). Save the .env file.
 * _Run  $ npm run start  to view the browser and the program's functionality_
 
 
